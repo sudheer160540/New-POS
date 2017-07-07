@@ -1,0 +1,69 @@
+.login-border{
+    background: #fff;
+    margin-top: 79px;
+    padding:30px
+}
+.login-app{
+    text-align: center;
+    color: white; 
+    background-color: rgb(192, 4, 4);
+    margin: -30px; 
+    margin-bottom: 30px;
+}
+.image-logo{
+    width: 430px;
+    width: 146px;
+}
+.red-color{
+     
+    background-color: #c00404;
+   
+}
+
+.btn--idle:before, .btn--processing:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-top: -13px;
+  margin-left: -13px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJsb2FkZXItMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQogICB3aWR0aD0iMjVweCIgaGVpZ2h0PSIyNXB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQwIDQwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgPHBhdGggb3BhY2l0eT0iMC4yIiBmaWxsPSIjZmZmIiBkPSJNMjAuMjAxLDUuMTY5Yy04LjI1NCwwLTE0Ljk0Niw2LjY5Mi0xNC45NDYsMTQuOTQ2YzAsOC4yNTUsNi42OTIsMTQuOTQ2LDE0Ljk0NiwxNC45NDYNCiAgICBzMTQuOTQ2LTYuNjkxLDE0Ljk0Ni0xNC45NDZDMzUuMTQ2LDExLjg2MSwyOC40NTUsNS4xNjksMjAuMjAxLDUuMTY5eiBNMjAuMjAxLDMxLjc0OWMtNi40MjUsMC0xMS42MzQtNS4yMDgtMTEuNjM0LTExLjYzNA0KICAgIGMwLTYuNDI1LDUuMjA5LTExLjYzNCwxMS42MzQtMTEuNjM0YzYuNDI1LDAsMTEuNjMzLDUuMjA5LDExLjYzMywxMS42MzRDMzEuODM0LDI2LjU0MSwyNi42MjYsMzEuNzQ5LDIwLjIwMSwzMS43NDl6Ii8+DQogIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNi4wMTMsMTAuMDQ3bDEuNjU0LTIuODY2Yy0yLjE5OC0xLjI3Mi00Ljc0My0yLjAxMi03LjQ2Ni0yLjAxMmgwdjMuMzEyaDANCiAgICBDMjIuMzIsOC40ODEsMjQuMzAxLDkuMDU3LDI2LjAxMywxMC4wNDd6Ij4NCiAgICA8YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVUeXBlPSJ4bWwiDQogICAgICBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iDQogICAgICB0eXBlPSJyb3RhdGUiDQogICAgICBmcm9tPSIwIDIwIDIwIg0KICAgICAgdG89IjM2MCAyMCAyMCINCiAgICAgIGR1cj0iMC41cyINCiAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+DQogICAgPC9wYXRoPg0KICA8L3N2Zz4=");
+}
+
+.btn--idle {
+  position: relative;
+  /* Animate in default btn contents */
+}
+.btn--idle:before {
+  animation-name: fadeOut;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+.btn--idle > .btn__text {
+  animation-name: fadeInScale;
+  animation-delay: 220ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.btn--processing {
+  position: relative;
+  pointer-events: none;
+  /* Animate out default btn contents */
+}
+.btn--processing:before {
+  animation-name: fadeIn;
+  animation-delay: 320ms;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+.btn--processing > .btn__text {
+  display: inline-block;
+  animation-name: fadeOutScale;
+  animation-delay: 50ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
